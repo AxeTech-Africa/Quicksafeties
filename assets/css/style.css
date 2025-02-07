@@ -383,7 +383,7 @@ label {
 	background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 80%);
 }
 .scroll-top:hover {
-	background: var(--tg-secondary-color);
+	background: var(--tg-primary-color);
 }
 
 
@@ -606,7 +606,7 @@ label {
 }
 .navbar-wrap ul li .sub-menu li a:hover,
 .navbar-wrap ul li .sub-menu li.active a {
-	color: var(--tg-secondary-color);
+	color: var(--tg-primary-color);
 }
 .navbar-wrap ul li:hover > .sub-menu {
 	opacity: 1;
@@ -1220,7 +1220,7 @@ label {
 	font-size: 24px;
 	font-weight: 700;
 	letter-spacing: 0.1em;
-	background: var(--tg-secondary-color);
+	background: var(--tg-secondary-color  );
 	color: var(--tg-white);
 	display: inline-block;
 	line-height: 1.2;
@@ -1276,7 +1276,7 @@ label {
 	font-size: 20px;
 	letter-spacing: 0.1em;
 	color: var(--tg-white);
-	background: var(--tg-secondary-color);
+	background: var(--tg-primary-color);
 	display: inline-block;
 	border-radius: 14px;
 	line-height: 1;
@@ -1326,7 +1326,7 @@ label {
 	color: var(--tg-white);
 }
 .banner-content-two .banner-content-bottom .btn::before {
-	background: var(--tg-secondary-color);
+	background: var(--tg-primary-color);
 }
 .banner-content-two .banner-content-bottom .banner-contact {
 	display: flex;
@@ -1560,14 +1560,14 @@ label {
 .section-title .sub-title {
 	display: flex;
 	align-items: center;
-	color: var(--tg-secondary-color);
+	color: var(--tg-primary-color);
 	font-weight: 700;
 	font-size: 18px;
 	margin-bottom: 15px;
 }
 .section-title .sub-title svg {
 	width: 26px;
-	color: var(--tg-secondary-color);
+	color: var(--tg-primary-color);
 	margin-right: 8px;
 }
 .section-title .title {
@@ -1619,7 +1619,7 @@ label {
 	align-items: center;
 	justify-content: center;
 	color: var(--tg-white);
-	background: var(--tg-secondary-color);
+	background: var(--tg-primary-color);
 	border-radius: 50%;
 	font-size: 15px;
 	margin-right: 12px;
@@ -1630,7 +1630,7 @@ label {
 	font-size: 24px;
 }
 .about-content .contact a:hover {
-	color: var(--tg-secondary-color);
+	color: var(--tg-primary-color);
 }
 
 
@@ -1731,7 +1731,7 @@ label {
 	width: 435px;
 	height: 435px;
 	border-radius: 50px;
-	border: 10px solid var(--tg-secondary-color);
+	border: 10px solid var(--tg-primary-color);
 	right: 0;
 	bottom: 0;
 }
@@ -2210,7 +2210,7 @@ label {
 	width: 35px;
 }
 .services-item-five:hover .services-icon {
-	background: var(--tg-secondary-color);
+	background: var(--tg-primary-color);
 }
 .services-content-five .title {
 	font-size: 24px;
@@ -2423,7 +2423,7 @@ label {
 	align-items: center;
 	justify-content: center;
 	border-radius: 50%;
-	background: var(--tg-secondary-color);
+	background: var(--tg-primary-color);
 	color: var(--tg-white);
 	position: absolute;
 	font-weight: 700;
@@ -2651,7 +2651,7 @@ label {
 .introduction-img-wrap img:nth-child(2) {
 	max-width: 240px;
 	max-height: 240px;
-	border: 10px solid var(--tg-secondary-color);
+	border: 10px solid var(--tg-primary-color);
 	border-radius: 50%;
 	object-fit: cover;
 	position: absolute;
@@ -2664,7 +2664,7 @@ label {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: var(--tg-secondary-color);
+	background: var(--tg-primary-color);
 	border-radius: 50%;
 	font-size: 25px;
 	color: var(--tg-white);
@@ -2802,7 +2802,7 @@ label {
 	max-height: 240px;
 	border-radius: 50%;
 	object-fit: cover;
-	border: 10px solid var(--tg-secondary-color);
+	border: 10px solid var(--tg-primary-color);
 	position: absolute;
 	left: -20px;
 	bottom: -45px;
@@ -2890,7 +2890,7 @@ label {
 	margin-bottom: 0;
 }
 .pricing-bottom .list-wrap li i {
-	color: var(--tg-secondary-color);
+	color: var(--tg-primary-color);
 	font-size: 14px;
 	margin-right: 10px;
 }
@@ -2909,7 +2909,7 @@ label {
 }
 .team-content {
 	margin: 0 35px;
-	background: var(--tg-secondary-color);
+	background: var(--tg-primary-color);
 	border-radius: 50px;
 	text-align: center;
 	position: relative;
@@ -2952,7 +2952,7 @@ label {
 	transition: .3s ease-in;
 }
 .team-social:hover .social-toggle-icon {
-	background: var(--tg-secondary-color);
+	background: var(--tg-primary-color);
 }
 .team-social ul {
 	position: absolute;
@@ -2999,7 +2999,7 @@ label {
     transition-delay: 100ms;
 }
 .team-social ul li a:hover {
-    background: var(--tg-secondary-color);
+    background: var(--tg-primary-color);
 }
 
 /* team-two */
@@ -3017,7 +3017,7 @@ label {
     transition: .3s linear;
 }
 .team-item-two:hover .team-thumb-two {
-    border-color: var(--tg-secondary-color);
+    border-color: var(--tg-primary-color);
 }
 .team-thumb-two img {
 	transition: .3s linear;
@@ -3231,7 +3231,7 @@ label {
 }
 .counter-item .icon svg {
 	width: 60px;
-	color: var(--tg-secondary-color);
+	color: var(--tg-primary-color);
 }
 .counter-item .content .count {
 	margin-bottom: 5px;
@@ -4455,7 +4455,7 @@ label {
 	top: -39px;
 }
 .blog-content-two .tag:hover {
-	background: var(--tg-secondary-color);
+	background: var(--tg-primary-color);
 }
 .blog-content-two .title {
 	font-size: 30px;
@@ -4996,7 +4996,7 @@ label {
 	transition: .3s linear;
 }
 .inner-contact-info-item:hover .icon {
-	background: var(--tg-secondary-color);
+	background: var(--tg-primary-color);
 }
 .inner-contact-info-item .content {
 	display: flex;
@@ -5071,13 +5071,13 @@ label {
 	max-height: 180px;
 }
 .contact-content form .btn {
-	background: var(--tg-secondary-color);
+	background: var(--tg-primary-color);
 }
 .contact-content form .btn::before {
 	background: var(--tg-white);
 }
 .contact-content form .btn:hover {
-	color: var(--tg-secondary-color);
+	color: var(--tg-primary-color);
 }
 #contact-map {
 	width: 100%;
@@ -5147,7 +5147,7 @@ label {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: var(--tg-secondary-color);
+	background: var(--tg-primary-color);
 	color: var(--tg-white);
 	border-radius: 50%;
 	font-size: 14px;
@@ -5161,7 +5161,7 @@ label {
 	line-height: 1;
 }
 .footer-contact .list-wrap .phone-addess a:hover {
-	color: var(--tg-secondary-color);
+	color: var(--tg-primary-color);
 }
 .footer-contact .list-wrap .email-addess a {
 	display: inline-block;
@@ -5170,7 +5170,7 @@ label {
 	line-height: 1;
 }
 .footer-contact .list-wrap .email-addess a:hover {
-	color: var(--tg-secondary-color);
+	color: var(--tg-primary-color);
 }
 .fw-link-list .list-wrap li {
 	margin-bottom: 12px;
@@ -5390,7 +5390,7 @@ label {
   transform: translate(-50%, -50%);
   width: 100px;
   height: 100px;
-  border-top: 3px solid var(--tg-secondary-color);
+  border-top: 3px solid var(--tg-primary-color);
   border-radius: 50%;
   animation: loaderspin 1.8s infinite ease-in-out;
   -webkit-animation: loaderspin 1.8s infinite ease-in-out;
