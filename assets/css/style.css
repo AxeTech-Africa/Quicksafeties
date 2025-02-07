@@ -547,7 +547,7 @@ label {
 	color: var(--tg-white);
 	font-size: 15px;
 	padding: 18px 18px;
-	background: var(--tg-secondary-color);
+	background:#50c7ef;
 	border-radius: 14px;
 }
 .header-action .header-btn .btn:hover {
@@ -5491,17 +5491,21 @@ label {
   }
   
 
-  .col-md-6 > div {
+  .grid {
 	display: flex;
-	gap: 20px; /* Adjust the spacing as needed */
+	gap: 20px; /* Adjusts space between the two elements */
   }
   
-  .col-md-6 > div .form-grp {
-	flex: 1;
+  .form-grp {
+	flex: 15; /* Makes both items share available space equally */
   }
   
   .form-grp select {
-	width: 100%;
+	width: 100%; /* Ensures the select elements fill the width of their container */
   }
   
+  .no-flex {
+	flex: none; /* Remove flex behavior */
+	width: 100%;
+  }
   
