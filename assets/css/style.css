@@ -5480,6 +5480,28 @@ label {
 
 
 
+.no-wrap {
+	white-space: nowrap;
+  }
 
+  @media (max-width: 576px) {
+	.no-wrap {
+	  font-size: 10.2px; /* adjust as necessary */
+	}
+  }
+  
+
+  .col-md-6 > div {
+	display: flex;
+	gap: 20px; /* Adjust the spacing as needed */
+  }
+  
+  .col-md-6 > div .form-grp {
+	flex: 1;
+  }
+  
+  .form-grp select {
+	width: 100%;
+  }
   
   
