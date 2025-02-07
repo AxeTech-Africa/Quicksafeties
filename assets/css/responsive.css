@@ -497,10 +497,8 @@
 	width: 40px;
 }
 .menu-style-four .header-action .header-contact {
-	display: none;
 }
 .menu-style-three .header-action > ul .header-btn {
-	display: none;
 }
 .banner-bg::before {
     height: 195px;
@@ -526,7 +524,6 @@
 	padding: 20px 0;
 }
 .header-action > ul li.header-btn {
-	display: none;
 }
 .menu-nav {
 	justify-content: space-between;
