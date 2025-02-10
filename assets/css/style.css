@@ -5581,3 +5581,83 @@ label {
 	opacity: 1;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .banner-content {
+        text-align: center;
+        padding: 20px;
+    }
+    .banner-content h1 {
+        font-size: 22px;
+        line-height: 1.3;
+    }
+    .banner-content p {
+        font-size: 16px;
+    }
+    .banner-btn a {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .header-action {
+        margin-top: 10px; /* Adds space below the logo */
+        text-align: center; /* Centers the button */
+        justify-content: center !important;
+    }
+
+    .header-action .list-wrap {
+        padding: 10px 0; /* Adds padding around the button */
+    }
+
+    .header-btn .btn {
+        font-size: 12px; /* Adjusts font size for smaller screens */
+        padding: 6px 13px; /* Adjusts button padding */
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    .section-title-two .title {
+        font-size: 22px !important;  /* Adjust font size */
+        line-height: 1.4 !important;
+        max-height: 2.8em !important; /* Restrict to 2 lines */
+        overflow: hidden !important;
+        display: -webkit-box !important;
+        -webkit-line-clamp: 2 !important; /* Limit to 2 lines */
+        -webkit-box-orient: vertical !important;
+        text-overflow: ellipsis !important;
+        white-space: normal !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title-two .title {
+        font-size: 20px !important; /* Smaller font size for mobile */
+        line-height: 1.1 !important;
+    }
+}
