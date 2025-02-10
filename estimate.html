@@ -51,7 +51,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="header-top-left">
-                        <span><i class="fas fa-tint"></i> best cleaning company!</span>
+                        <span><i class="fas fa-tint"></i>clean space!</span>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -263,35 +263,35 @@
                             </span>
                         </h2>
                     </div>
-                    <form action="#">
+                    <form id="whatsappForm">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-grp">
-                                    <input type="text" placeholder="Full name">
+                                    <input type="text" id="name" placeholder="Full name">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-grp">
-                                    <input type="text" placeholder="Your email">
+                                    <input type="text" id="email" placeholder="Your email">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-grp">
-                                    <input type="text" placeholder="Phone number">
+                                    <input type="text" id="phone" placeholder="Phone number">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-grp">
-                                    <input type="text" placeholder="Your Location">
+                                    <input type="text" id="location" placeholder="Your Location">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-grp">
-                                        <select id="shortBy" name="select" class="form-select" aria-label="Default select example">
+                                        <select id="service" name="select" class="form-select">
                                             <option value="">Select Service</option>
                                             <option>Cleaning</option>
-                                            <option>Feminie Hygiene</option>
+                                            <option>Feminine Hygiene</option>
                                             <option>Waste Management</option>
                                             <option>Fumigation & Pest Control</option>
                                             <option>Landscaping & Gardening</option>
@@ -302,7 +302,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-grp" style="padding-left: 2px;">
-                                        <select id="sector" name="select" class="form-select" aria-label="Default select example">
+                                        <select id="industry" name="select" class="form-select">
                                             <option value="">Select Industry</option>
                                             <option>Office</option>
                                             <option>Education</option>
@@ -317,7 +317,7 @@
                             </div>
                         </div>
                         <div class="form-grp">
-                            <textarea name="message" placeholder="Write message"></textarea>
+                            <textarea id="message" placeholder="Write message"></textarea>
                         </div>
                         <button type="submit" class="btn">Send a message</button>
                     </form>
@@ -326,6 +326,7 @@
         </div>
     </div>
 </section>
+
 <!-- estimate-area-end -->
 
 
@@ -476,5 +477,25 @@
         <script src="assets/js/wow.min.js"></script>
         <script src="assets/js/aos.js"></script>
         <script src="assets/js/main.js"></script>
+        <script>
+            document.getElementById("whatsappForm").addEventListener("submit", function(event) {
+                event.preventDefault(); // Prevent default form submission
+        
+                let name = document.getElementById("name").value;
+                let email = document.getElementById("email").value;
+                let phone = document.getElementById("phone").value;
+                let location = document.getElementById("location").value;
+                let service = document.getElementById("service").value;
+                let industry = document.getElementById("industry").value;
+                let message = document.getElementById("message").value;
+        
+                let whatsappMessage = `Hello, I would like to request a service.\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nLocation: ${location}\nService: ${service}\nIndustry: ${industry}\nMessage: ${message}`;
+        
+                let phoneNumber = "0111378856" ; // Your WhatsApp number 
+                let whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+        
+                window.open(whatsappURL, "_blank"); // Open WhatsApp
+            });
+        </script>
     </body>
 </html>
