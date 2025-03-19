@@ -688,7 +688,7 @@ function aosAnimation() {
 })(jQuery);
 
 
-  document.getElementById("whatsappForm").addEventListener("submit", function(event) {
+  document.getElementById("estimateForm").addEventListener("submit", function(event) {
     event.preventDefault(); // Prevent default form submission
 
     // Get form values
@@ -723,7 +723,7 @@ function aosAnimation() {
     window.open(whatsappURL, "_blank");
   });
 
-  
+
     document.addEventListener("DOMContentLoaded", function () {
       let currentPath = window.location.pathname;
       

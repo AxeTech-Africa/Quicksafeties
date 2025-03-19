@@ -310,34 +310,34 @@
                             <div class="col-lg-6">
                                 <div class="contact-content">
                                     <h2 class="title">Contact for Services</h2>
-                                    <form action="#">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form-grp">
-                                                    <input type="text" placeholder="Your Name">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-grp">
-                                                    <input type="email" placeholder="Email address">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-grp">
-                                                    <input type="text" placeholder="Phone number">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-grp">
-                                                    <input type="text" placeholder="Subject">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-grp">
-                                            <textarea name="message" placeholder="Write message"></textarea>
-                                        </div>
-                                        <button type="submit" class="btn">Send a message</button>
-                                    </form>
+<form id="whatsappForm">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-grp">
+                <input type="text" id="name" placeholder="Your Name" required>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-grp">
+                <input type="email" id="email" placeholder="Email address">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-grp">
+                <input type="text" id="phone" placeholder="Phone number" required>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-grp">
+                <input type="text" id="subject" placeholder="Subject">
+            </div>
+        </div>
+    </div>
+    <div class="form-grp">
+        <textarea id="message" placeholder="Write message"></textarea>
+    </div>
+    <button type="submit" class="btn">Send a message</button>
+</form>
                                 </div>
                             </div>
                         </div>
@@ -508,6 +508,33 @@
                 window.history.pushState(null, "", newUrl);
               }
             });
+          </script>
+          <script>
+            document.getElementById("whatsappForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form from actually submitting
+
+    // Get form values
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let phone = document.getElementById("phone").value;
+    let subject = document.getElementById("subject").value;
+    let message = document.getElementById("message").value;
+
+    // WhatsApp number (without + or spaces)
+    let whatsappNumber = "254111378856"; // Kenya code (254) added before the number
+
+    // Format the message
+    let whatsappMessage = `Hello, I would like to inquire:\n\n*Name:* ${name}\n*Email:* ${email}\n*Phone:* ${phone}\n*Subject:* ${subject}\n*Message:* ${message}`;
+
+    // Encode the message for URL
+    let encodedMessage = encodeURIComponent(whatsappMessage);
+
+    // WhatsApp link
+    let whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+    // Redirect to WhatsApp
+    window.open(whatsappURL, "_blank");
+});
           </script>
           
     </body>
