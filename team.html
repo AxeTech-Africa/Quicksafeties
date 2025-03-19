@@ -508,19 +508,7 @@
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/aos.js"></script>
     <script src="assets/js/main.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            let currentPath = window.location.pathname;
-
-            // Only modify URL if it ends with .html
-            if (currentPath.endsWith(".html")) {
-                let newUrl = currentPath.replace(".html", "");
-
-                // Change URL without affecting reload behavior
-                window.history.pushState(null, "", newUrl);
-            }
-        });
-    </script>
+    
 
 </body>
 
