@@ -33,6 +33,13 @@
     <link rel="stylesheet" href="assets/css/aos.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <script>
+        if (window.location.pathname === "/index.html") {
+          history.replaceState(null, "", "/home");
+        }
+      </script>
+      
+      
 </head>
 
     <body>
@@ -615,13 +622,13 @@
                     <div class="row brand-active">
                         <div class="col-12">
                             <div class="brand-item">
-                                <img src="assets/img/brand/image.png" alt="">
+                                <img src="assets/img/brand/kaimosilogo.jpg" alt="kaimosi university logo">
                             </div>
                         </div>
                     
                         <div class="col-12">
                             <div class="brand-item">
-                                <img src="assets/img/brand/images.png" alt="">
+                                <img src="assets/img/brand/logo-kasha.png" alt="Kasha properties logo">
                             </div>
                         </div>
                         <div class="col-12">
@@ -631,7 +638,7 @@
                         </div>
                         <div class="col-12">
                             <div class="brand-item">
-                                <img src="assets/img/brand/image copy.png" alt="">
+                                <img src="assets/img/brand/energyministry.png" alt="energy ministry">
                             </div>
                         </div>
                        
@@ -696,7 +703,7 @@
                             <div class="col-lg-3 col-sm-6">
                                 <div class="footer-widget">
                                     <div class="fw-title">
-                                        <h4 class="title">Our Links</h4>
+                                        <h4 class="title">Quick Links</h4>
                                     </div>
                                     <div class="fw-link-list">
                                         <ul class="list-wrap">
@@ -790,11 +797,9 @@
         <script src="assets/js/wow.min.js"></script>
         <script src="assets/js/aos.js"></script>
         <script src="assets/js/main.js"></script>
-        <script>
-            if (window.location.pathname.endsWith('.html')) {
-  let newUrl = window.location.pathname.replace('.html', '');
-  window.history.replaceState(null, null, newUrl);
-}
-        </script>
+     
+          
+      
+          
     </body>
 </html>
