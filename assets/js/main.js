@@ -686,3 +686,52 @@ function aosAnimation() {
 
 
 })(jQuery);
+
+
+  document.getElementById("whatsappForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    // Get form values
+    let name = document.getElementById("name").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let phone = document.getElementById("phone").value.trim();
+    let location = document.getElementById("location").value.trim();
+    let service = document.getElementById("service").value.trim();
+    let industry = document.getElementById("industry").value.trim();
+    let message = document.getElementById("message").value.trim();
+
+    // Ensure at least name and phone are provided
+    if (!name || !phone) {
+      alert("Please enter your Name and Phone Number.");
+      return;
+    }
+
+    // Format WhatsApp message
+    let whatsappMessage = `Hello, I would like to request a service.\n\n`
+      + `*Name:* ${name}\n`
+      + `*Email:* ${email}\n`
+      + `*Phone:* ${phone}\n`
+      + `*Location:* ${location}\n`
+      + `*Service:* ${service}\n`
+      + `*Industry:* ${industry}\n`
+      + `*Message:* ${message}`;
+
+    // WhatsApp link with phone number (replace 0111378856 with actual number)
+    let whatsappURL = `https://wa.me/254111378856?text=${encodeURIComponent(whatsappMessage)}`;
+
+    // Open WhatsApp
+    window.open(whatsappURL, "_blank");
+  });
+
+  
+    document.addEventListener("DOMContentLoaded", function () {
+      let currentPath = window.location.pathname;
+      
+      // Only modify URL if it ends with .html
+      if (currentPath.endsWith(".html")) {
+        let newUrl = currentPath.replace(".html", "");
+        
+        // Change URL without affecting reload behavior
+        window.history.pushState(null, "", newUrl);
+      }
+    });
