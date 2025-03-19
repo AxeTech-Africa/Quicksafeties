@@ -628,10 +628,18 @@
         <script src="assets/js/aos.js"></script>
         <script src="assets/js/main.js"></script>
         <script>
-            if (window.location.pathname.endsWith('.html')) {
-  let newUrl = window.location.pathname.replace('.html', '');
-  window.history.replaceState(null, null, newUrl);
-}
-        </script>
+            document.addEventListener("DOMContentLoaded", function () {
+              let currentPath = window.location.pathname;
+              
+              // Only modify URL if it ends with .html
+              if (currentPath.endsWith(".html")) {
+                let newUrl = currentPath.replace(".html", "");
+                
+                // Change URL without affecting reload behavior
+                window.history.pushState(null, "", newUrl);
+              }
+            });
+          </script>
+          
     </body>
 </html>
