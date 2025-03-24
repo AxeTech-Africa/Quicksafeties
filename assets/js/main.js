@@ -716,8 +716,8 @@ function aosAnimation() {
       + `*Industry:* ${industry}\n`
       + `*Message:* ${message}`;
 
-    // WhatsApp link with phone number (replace 0111378856 with actual number)
-    let whatsappURL = `https://wa.me/254111378856?text=${encodeURIComponent(whatsappMessage)}`;
+    // WhatsApp link with phone number (replace 0743022868 with actual number)
+    let whatsappURL = `https://wa.me/254743022868?text=${encodeURIComponent(whatsappMessage)}`;
 
     // Open WhatsApp
     window.open(whatsappURL, "_blank");
