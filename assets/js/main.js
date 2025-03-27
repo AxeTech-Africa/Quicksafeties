@@ -724,14 +724,4 @@ function aosAnimation() {
   });
 
 
-    document.addEventListener("DOMContentLoaded", function () {
-      let currentPath = window.location.pathname;
-      
-      // Only modify URL if it ends with .html
-      if (currentPath.endsWith(".html")) {
-        let newUrl = currentPath.replace(".html", "");
-        
-        // Change URL without affecting reload behavior
-        window.history.pushState(null, "", newUrl);
-      }
-    });
+   
